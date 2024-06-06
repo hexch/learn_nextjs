@@ -1,6 +1,14 @@
 import '@/app/ui/global.css';
-import {inter} from '@/app/ui/fonts';
+import { inter } from '@/app/ui/fonts';
+import { MetaData } from 'next';
 
+export const metadata: MetaData = {
+  title: {
+    template: '%s | Acme Dashboard',
+    default: 'Acme Dashboard',
+  },
+  description: 'The official Next.js Course Dashboard, built with App Router.',
+};
 export default function RootLayout({
   children,
 }: {
